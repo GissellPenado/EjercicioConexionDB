@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane prefHeight="610.0" prefWidth="680.0" xmlns="http://javafx.com/javafx/17.0.12" xmlns:fx="http://javafx.com/fxml/1" fx:controller="CONTROLLER_NAME">
+   <children>
+      <ComboBox fx:id="cmbCategoria" layoutX="109.0" layoutY="186.0" prefHeight="26.0" prefWidth="250.0" />
+      <Label layoutX="34.0" layoutY="191.0" text="Categoría" />
+      <Label layoutX="34.0" layoutY="103.0" text="Título" />
+      <Label layoutX="34.0" layoutY="146.0" text="Autor" />
+      <Label layoutX="411.0" layoutY="146.0" text="Precio" />
+      <TextField fx:id="txtTitulo" layoutX="109.0" layoutY="97.0" prefHeight="26.0" prefWidth="249.0" />
+      <TextField fx:id="txtAutor" layoutX="109.0" layoutY="141.0" prefHeight="26.0" prefWidth="250.0" />
+      <TextField fx:id="txtPrecio" layoutX="461.0" layoutY="141.0" prefHeight="26.0" prefWidth="79.0" />
+      <Button fx:id="btnGuardar" layoutX="116.0" layoutY="565.0" mnemonicParsing="false" text="Guardar libro" />
+      <Button fx:id="btnLimpiar" layoutX="232.0" layoutY="565.0" mnemonicParsing="false" text="Limpiar campos" />
+      <Button fx:id="btnActualizar" layoutX="366.0" layoutY="565.0" mnemonicParsing="false" text="Actualizar tabla" />
+      <TextField layoutX="461.0" layoutY="186.0" prefHeight="26.0" prefWidth="79.0" />
+      <Label layoutX="413.0" layoutY="190.0" text="Stock" />
+      <TableView fx:id="tblLibros" layoutX="9.0" layoutY="259.0" prefHeight="198.0" prefWidth="644.0">
+        <columns>
+            <TableColumn fx:id="colId" prefWidth="46.20000648498535" text="ID" />
+          <TableColumn fx:id="colTitulo" prefWidth="144.00000762939453" text="Título" />
+          <TableColumn fx:id="colAutor" prefWidth="142.39999389648438" text="Autor" />
+            <TableColumn fx:id="colCategoria" prefWidth="138.39999389648438" text="Categoría" />
+            <TableColumn fx:id="colPrecio" minWidth="0.0" prefWidth="96.19998168945312" text="Precio" />
+            <TableColumn fx:id="colStock" prefWidth="74.0" text="Stock" />
+        </columns>
+      </TableView>
+      <Label layoutX="35.0" layoutY="39.0" text="Catálogo de Libros" />
+   </children>
+</AnchorPane>
